@@ -19,6 +19,7 @@
   "devDependencies": {
     "@nuxt/eslint": "1.10.0",
     "eslint": "^9.38.0",
+    "sass": "^1.93.2",
     "typescript": "^5.9.3"
   }
 }

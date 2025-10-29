@@ -3,3 +3,9 @@
 </template>
 
 <script setup></script>
+
+<style scoped>
+h1 {
+	font-family: 'FarAwayGalaxy', sans-serif;
+}
+</style>
