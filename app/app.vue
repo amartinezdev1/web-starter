@@ -1,13 +1,15 @@
 <template>
-	<div>
-		<NuxtLayout>
-			<NuxtPage />
-		</NuxtLayout>
-	</div>
+	<UApp>
+		<UMain>
+			<NuxtLayout>
+				<NuxtPage />
+			</NuxtLayout>
+		</UMain>
+	</UApp>
 </template>
 
 <script setup lang="ts">
-const appConfig = useAppConfig()
+// const appConfig = useAppConfig();
 </script>
 
 <style lang="scss" scoped>

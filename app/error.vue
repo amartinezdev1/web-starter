@@ -9,6 +9,6 @@
 import type { NuxtError } from 'nuxt/app';
 
 const props = defineProps<{
-	error: NuxtError,
+	error: NuxtError;
 }>();
 </script>

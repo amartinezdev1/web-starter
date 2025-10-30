@@ -1,6 +1,9 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
 @font-face {
 	font-family: 'FarAwayGalaxy';
-	src: url('/fonts/FarAwayGalaxy.woff') format('woff');
+	src: url('/fonts/far_away_galaxy.ttf') format('ttf');
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;

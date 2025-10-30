@@ -1,11 +1,5 @@
 <template>
-	<h1>Hello World</h1>
+	<UContainer>
+		<h1>Hello World 2.0</h1>
+	</UContainer>
 </template>
-
-<script setup></script>
-
-<style scoped>
-h1 {
-	font-family: 'FarAwayGalaxy', sans-serif;
-}
-</style>
