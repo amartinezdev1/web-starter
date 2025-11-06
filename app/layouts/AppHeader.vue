@@ -1,31 +1,23 @@
 <template>
-	<UHeader>
-		<template #left>
-			<NuxtLink>
-				<AppLogo class="w-auto h-6 shrink-0" />
-			</NuxtLink>
-			<TemplateMenu />
-		</template>
-
-		<UNavigationMenu
-			:items="items"
-			variant="link"
-		/>
+	<UHeader title="Nuxt UI">
+		<UNavigationMenu :items="items" />
 
 		<template #right>
 			<UColorModeButton />
-			<UButton
-				icon="i-lucide-log-in"
-				color="neutral"
-				variant="ghost"
-				class="lg:hidden"
-			/>
-			<UButton
-				class="font-bold rounded-full"
-				color="neutral"
+
+			<UTooltip
+				text="Open on GitHub"
+				:kbds="['meta', 'G']"
 			>
-				Book an appointment
-			</UButton>
+				<UButton
+					color="neutral"
+					variant="ghost"
+					to="https://github.com/nuxt/ui"
+					target="_blank"
+					icon="i-simple-icons-github"
+					aria-label="GitHub"
+				/>
+			</UTooltip>
 		</template>
 
 		<template #body>
@@ -34,50 +26,39 @@
 				orientation="vertical"
 				class="-mx-2.5"
 			/>
-			<UButton
-				label="Sign in"
-				color="neutral"
-				variant="subtle"
-				block
-				class="mb-3"
-			/>
-			<UButton
-				label="Sign up"
-				color="neutral"
-				block
-			/>
 		</template>
 	</UHeader>
 </template>
 
 <script setup lang="ts">
+import type { NavigationMenuItem } from '@nuxt/ui';
+
 const route = useRoute();
 
-const items = computed(() => [
+const items = computed<NavigationMenuItem[]>(() => [
 	{
-		label: 'Home',
+		label: 'Docs',
 		to: '/',
-		active: route.path.startsWith('/docs'),
+		icon: 'i-lucide-book-open',
+		active: route.path.startsWith('/'),
 	},
 	{
-		label: 'About',
+		label: 'Components',
 		to: '/',
-		active: route.path.startsWith('/pricing'),
+		icon: 'i-lucide-box',
+		active: route.path.startsWith('/'),
 	},
 	{
-		label: 'Pages',
-		to: '/',
-		active: route.path.startsWith('/blog'),
+		label: 'Figma',
+		icon: 'i-simple-icons-figma',
+		to: 'https://go.nuxt.com/figma-ui',
+		target: '_blank',
 	},
 	{
-		label: 'Pricing',
-		to: '/',
-		active: route.path.startsWith('/changelog'),
-	},
-	{
-		label: 'Cart',
-		to: '/',
-		active: route.path.startsWith('/changelog'),
+		label: 'Releases',
+		icon: 'i-lucide-rocket',
+		to: 'https://github.com/nuxt/ui/releases',
+		target: '_blank',
 	},
 ]);
 </script>
