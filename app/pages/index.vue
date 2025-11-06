@@ -1,5 +1,6 @@
 <template>
-	<div>
-		<h1>Hello World 2.0</h1>
-	</div>
+	<h1>amartinez.dev</h1>
 </template>
+
+<script setup lang="ts">
+</script>
