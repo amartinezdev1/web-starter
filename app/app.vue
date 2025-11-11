@@ -1,11 +1,8 @@
 <template>
-	<UApp>
-		<UMain>
-			<NuxtLayout>
-				<NuxtPage />
-			</NuxtLayout>
-		</UMain>
-	</UApp>
+	<NuxtLayout>
+		<NuxtPage />
+		<LazyBgStars />
+	</NuxtLayout>
 </template>
 
 <script setup lang="ts">
