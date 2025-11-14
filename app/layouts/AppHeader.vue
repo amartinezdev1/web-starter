@@ -41,7 +41,6 @@ const items = computed<NavigationMenuItem[]>(() => [
 		/>
 
 		<template #right>
-			<UColorModeButton />
 			<UButton
 				color="neutral"
 				variant="ghost"

@@ -9,6 +9,7 @@
 
 :root {
   --ui-container: 1400px; /* o el valor que quieras */
+  font-family: var(--font-sans);
 }
 
 body {
