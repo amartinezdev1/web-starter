@@ -11,10 +11,23 @@ const links = ref([
 		label: 'Watch demo',
 		to: '/',
 		icon: 'lucide:circle-play',
-		class: 'bg-black hover:bg-accented/20 text-white text-base md:text-lg font-medium h-12 px-4 cursor-pointer rounded-md',
+		variant: 'ghost' as const,
+		class: 'bg-black hover:bg-accented/20 text-white text-base md:text-md font-medium h-12 px-4 cursor-pointer rounded-md transition-all duration-200 ring-1 ring-accented/10 bg-accented/20 text-white shadow-lg scale-105 z-10',
 
 	},
 ]);
+
+const mainSection = {
+	headline: '',
+	title: 'Your Creative Agentic Partner',
+	description: '100x your marketing with an AI creative team. The worlds first AI designer, marketer, and ad creator in one.',
+};
+
+const exampleSection = {
+	headline: 'Examples',
+	title: 'What can we create together?',
+	description: '',
+};
 </script>
 
 <template>
@@ -31,14 +44,10 @@ const links = ref([
 				>
 					New release
 				</UBadge>
-				<div class="flex flex-col gap-8 max-w-xl mx-auto">
-					<h1 class="font-[Manrope] text-center font-heading font-semibold text-5xl md:text-7xl tracking-tighter leading-[1.05em]">
-						Your Creative Agentic Partner
-					</h1>
-					<p class="text-base md:text-xl font-medium  leading-relaxed">
-						100x your marketing with an AI creative team. The world's first AI designer, marketer, and ad creator in one.
-					</p>
-				</div>
+				<LazyTitleSection
+					:hero-title="mainSection"
+					:main="true"
+				/>
 			</template>
 			<img
 				src="../assets/mock-dark.avif"
@@ -47,14 +56,10 @@ const links = ref([
 			>
 		</UPageHero>
 		<div class="w-full">
-			<div class="flex flex-col gap-6 items-center text-center max-w-sm md:max-w-xl mx-auto">
-				<h5 class="text-center font-medium text-base md:text-2xl ">
-					Examples
-				</h5>
-				<h2 class="text-center font-[Manrope] font-heading font-semibold text-5xl md:text-6xl tracking-tighter leading-[1.05em]">
-					What can we create together?
-				</h2>
-			</div>
+			<LazyTitleSection
+				:hero-title="exampleSection"
+				:main="false"
+			/>
 			<LazySwiperAdvance hydrate-on-visible />
 		</div>
 		<LazyTabsItems hydrate-on-visible />

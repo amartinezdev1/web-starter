@@ -32,15 +32,12 @@ const breakpoints = {
 const slides = [
 	{
 		media: 'https://www.kyoso.com/video/works-with-all-channels.webm',
-		// media: '',
 	},
 	{
 		media: 'https://www.kyoso.com/video/access-multiple-content-types.webm',
-		// media: '',
 	},
 	{
 		media: 'https://www.kyoso.com/video/cares-about-quality-and-guidelines.webm',
-		// media: '',
 	},
 ];
 
@@ -94,10 +91,11 @@ watch(
 				autoplay
 				muted
 				playsinline
-				preload="metadata"
+				preload="auto"
+				loop
 				:src="slide.media"
 				controls
-				class="w-full h-full object-cover aspect-video rounded-lg md:rounded-4xl cursor-pointer transition-transform duration-200 ease-out hover:scale-[1.01] relative border border-amber-300"
+				class="w-full h-full object-cover aspect-video rounded-lg md:rounded-4xl cursor-pointer transition-transform duration-200 ease-out hover:scale-[1.01] relative"
 			/>
 		</swiper-slide>
 	</swiper>
