@@ -28,6 +28,24 @@ const exampleSection = {
 	title: 'What can we create together?',
 	description: '',
 };
+
+const comparisonSection = {
+	headline: 'Comparison',
+	title: 'No more platform hopping',
+	description: '100x your marketing with an AI creative team. The worlds first AI designer, marketer, and ad creator in one.',
+};
+
+const featuresSection = {
+	headline: 'Features',
+	title: 'Explore more',
+	description: 'Discover our ever-growing collection of tools and opportunities for content creators.',
+};
+
+const pricingSection = {
+	headline: 'Pricing',
+	title: 'For all teams',
+	description: 'Accessible for all type of the content creators and businesses.',
+};
 </script>
 
 <template>
@@ -62,6 +80,39 @@ const exampleSection = {
 			/>
 			<LazySwiperAdvance hydrate-on-visible />
 		</div>
+		<UPageHero>
+			<template #default>
+				<div class="w-full flex flex-col gap-12 md:gap-16 items-center">
+					<LazyTitleSection
+						:hero-title="comparisonSection"
+						:main="false"
+					/>
+				</div>
+				<ComparisonCards />
+			</template>
+		</UPageHero>
 		<LazyTabsItems hydrate-on-visible />
+		<UPageHero>
+			<template #default>
+				<div class="w-full flex flex-col gap-12 md:gap-16 items-center">
+					<LazyTitleSection
+						:hero-title="featuresSection"
+						:main="false"
+					/>
+					<LazyFeaturesCards hydrate-on-visible />
+				</div>
+			</template>
+		</UPageHero>
+		<UPageHero>
+			<template #default>
+				<div class="w-full flex flex-col gap-12 md:gap-16 items-center">
+					<LazyTitleSection
+						:hero-title="pricingSection"
+						:main="false"
+					/>
+					<PricingCards />
+				</div>
+			</template>
+		</UPageHero>
 	</div>
 </template>

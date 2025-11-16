@@ -12,7 +12,7 @@
 			v-for="card in cards"
 			:key="card.id"
 		>
-			<CardServices :card="card" />
+			<ServicesCards :card="card" />
 		</swiper-slide>
 	</swiper>
 </template>
