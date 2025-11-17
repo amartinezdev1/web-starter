@@ -12,6 +12,10 @@
   font-family: var(--font-sans);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: rgb(10, 10, 10);
 }

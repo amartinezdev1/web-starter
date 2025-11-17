@@ -8,6 +8,10 @@ export default defineNuxtConfig({
 			path: '~/components',
 			pathPrefix: false,
 		},
+		{
+			path: '~/layouts',
+			pathPrefix: false,
+		},
 	],
 	devtools: { enabled: false },
 	css: ['@/assets/css/main.css'],

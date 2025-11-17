@@ -5,25 +5,23 @@ const route = useRoute();
 
 const items = computed<NavigationMenuItem[]>(() => [
 	{
-		label: 'Docs',
-		to: '/',
+		label: 'Services',
+		to: '/#services',
 		active: route.path.startsWith('/'),
 	},
 	{
-		label: 'Components',
-		to: '/',
+		label: 'About',
+		to: '/#about',
 		active: route.path.startsWith('/'),
 	},
 	{
-		label: 'Figma',
-		to: 'https://go.nuxt.com/figma-ui',
-		target: '_blank',
+		label: 'Features',
+		to: '/#features',
 		class: 'text-white',
 	},
 	{
-		label: 'Releases',
-		to: 'https://github.com/nuxt/ui/releases',
-		target: '_blank',
+		label: 'FAQs',
+		to: '/#faqs',
 		class: 'text-white',
 	},
 ]);
@@ -31,7 +29,7 @@ const items = computed<NavigationMenuItem[]>(() => [
 
 <template>
 	<UHeader
-		title="Nuxt UI"
+		title="Bit Flow"
 		class="min-w-screen fixed border-0 bg-default/0"
 	>
 		<UNavigationMenu

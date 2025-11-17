@@ -35,6 +35,12 @@ const comparisonSection = {
 	description: '100x your marketing with an AI creative team. The worlds first AI designer, marketer, and ad creator in one.',
 };
 
+const brandSection = {
+	headline: 'Agentic Creativity',
+	title: 'Your Creative Partner',
+	description: 'Creates top-tier branded content across every format, platform, and channel without top-tier effort.',
+};
+
 const featuresSection = {
 	headline: 'Features',
 	title: 'Explore more',
@@ -45,6 +51,12 @@ const pricingSection = {
 	headline: 'Pricing',
 	title: 'For all teams',
 	description: 'Accessible for all type of the content creators and businesses.',
+};
+
+const questionsSection = {
+	headline: 'FAQs',
+	title: 'Frequently asked questions',
+	description: 'Get your questions answered.',
 };
 </script>
 
@@ -73,7 +85,10 @@ const pricingSection = {
 				class="rounded-lg shadow-2xl ring ring-default"
 			>
 		</UPageHero>
-		<div class="w-full">
+		<div
+			id="services"
+			class="w-full"
+		>
 			<LazyTitleSection
 				:hero-title="exampleSection"
 				:main="false"
@@ -88,11 +103,22 @@ const pricingSection = {
 						:main="false"
 					/>
 				</div>
-				<ComparisonCards />
+				<LazyComparisonCards />
 			</template>
 		</UPageHero>
-		<LazyTabsItems hydrate-on-visible />
-		<UPageHero>
+		<div
+			id="about"
+			class="w-full py-24 sm:py-32 lg:py-30"
+		>
+			<div class="flex flex-col items-center gap-6">
+				<LazyTitleSection
+					:hero-title="brandSection"
+					:main="false"
+				/>
+				<LazyTabsItems hydrate-on-visible />
+			</div>
+		</div>
+		<UPageHero id="features">
 			<template #default>
 				<div class="w-full flex flex-col gap-12 md:gap-16 items-center">
 					<LazyTitleSection
@@ -110,7 +136,18 @@ const pricingSection = {
 						:hero-title="pricingSection"
 						:main="false"
 					/>
-					<PricingCards />
+					<LazyPricingCards />
+				</div>
+			</template>
+		</UPageHero>
+		<UPageHero id="faqs">
+			<template #default>
+				<div class="w-full flex flex-col gap-12 md:gap-16 items-center">
+					<LazyTitleSection
+						:hero-title="questionsSection"
+						:main="false"
+					/>
+					<LazyFaqsAccordion class="w-full max-w-3xl px-4" />
 				</div>
 			</template>
 		</UPageHero>

@@ -1,10 +1,10 @@
+<script setup lang="ts">
+</script>
+
 <template>
 	<div>
 		<AppHeader />
 		<slot />
+		<LazyAppFooter />
 	</div>
 </template>
-
-<script setup lang="ts">
-import AppHeader from './AppHeader.vue';
-</script>
