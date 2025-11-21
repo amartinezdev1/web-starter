@@ -80,7 +80,7 @@ const questionsSection = {
 				/>
 			</template>
 			<img
-				src="../assets/mock-dark.avif"
+				src="/mock-dark.avif"
 				alt="App screenshot"
 				class="rounded-lg shadow-2xl ring ring-default"
 			>

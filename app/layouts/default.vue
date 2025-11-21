@@ -5,6 +5,6 @@
 	<div>
 		<AppHeader />
 		<slot />
-		<LazyAppFooter />
+		<AppFooter />
 	</div>
 </template>

@@ -13,7 +13,7 @@ export default defineNuxtConfig({
 			pathPrefix: false,
 		},
 	],
-	devtools: { enabled: false },
+	devtools: { enabled: true },
 	css: ['@/assets/css/main.css'],
 	compatibilityDate: '2025-07-15',
 	vite: {
