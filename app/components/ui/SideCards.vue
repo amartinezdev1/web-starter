@@ -18,7 +18,7 @@ const cards = [
 		<div
 			v-for="(card, index) in cards"
 			:key="index"
-			class="bg-[#171717] rounded-4xl flex-1 flex flex-col py-10 md:py-16"
+			class="bg-(--ui-card-bg) rounded-4xl flex-1 flex flex-col py-10 md:py-16"
 		>
 			<div class="flex flex-col gap-2 px-10 md:px-16">
 				<h3 class="font-medium text-lg md:text-2xl tracking-tight">

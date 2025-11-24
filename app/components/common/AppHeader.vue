@@ -1,8 +1,8 @@
 <script setup lang="ts">
+import { computed } from 'vue';
 import type { NavigationMenuItem } from '@nuxt/ui';
 
 const route = useRoute();
-
 const items = computed<NavigationMenuItem[]>(() => [
 	{
 		label: 'Services',
@@ -31,6 +31,7 @@ const items = computed<NavigationMenuItem[]>(() => [
 	<UHeader
 		title="Bit Flow"
 		class="min-w-screen fixed border-0 bg-default/0"
+		to="/"
 	>
 		<UNavigationMenu
 			:items="items"
@@ -46,6 +47,16 @@ const items = computed<NavigationMenuItem[]>(() => [
 				target="_blank"
 				icon="i-simple-icons-github"
 				aria-label="GitHub"
+			/>
+		</template>
+
+		<template #body>
+			<UNavigationMenu
+				:items="items"
+				variant="link"
+				color="neutral"
+				orientation="vertical"
+				class="-mx-2.5"
 			/>
 		</template>
 	</UHeader>

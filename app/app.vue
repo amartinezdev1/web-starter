@@ -1,7 +1,7 @@
 <template>
 	<NuxtLayout>
 		<NuxtPage />
-		<LazyBgStars />
+		<BgStars />
 	</NuxtLayout>
 </template>
 

@@ -24,7 +24,7 @@ const slideTo = (index: number) => {
 </script>
 
 <template>
-	<div class="gap-2 hidden md:flex flex-wrap justify-center">
+	<div class="gap-4 hidden md:flex flex-wrap justify-center">
 		<UButton
 			v-for="(item, index) in items"
 			:key="item.label"
@@ -38,5 +38,5 @@ const slideTo = (index: number) => {
 			{{ item.label }}
 		</UButton>
 	</div>
-	<SwiperTabs :active-slide="slideIndex" />
+	<SliderVideo :active-slide="slideIndex" />
 </template>

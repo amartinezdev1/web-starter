@@ -35,12 +35,12 @@ const items: NavigationMenuItem[] = [
 
 		<template #right>
 			<UButton
-				icon="i-simple-icons-discord"
+				icon="i-simple-icons-instagram"
 				color="neutral"
 				variant="ghost"
-				to="https://go.nuxt.com/discord"
+				to="https://www.instagram.com/bitflow.pa/"
 				target="_blank"
-				aria-label="Discord"
+				aria-label="Instagram"
 			/>
 			<UButton
 				icon="i-simple-icons-x"

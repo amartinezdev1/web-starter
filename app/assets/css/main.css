@@ -8,7 +8,9 @@
 }
 
 :root {
-  --ui-container: 1400px; /* o el valor que quieras */
+  --ui-container: 1400px;
+  --ui-card-bg: #171717;
+  --ui-primary: #ffffff;
   font-family: var(--font-sans);
 }
 
