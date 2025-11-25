@@ -13,79 +13,43 @@ const links = ref([
 		trailingIcon: 'i-lucide-arrow-right',
 	},
 ]);
+
+const { data: landing } = await useAsyncData('index', () => queryCollection('landing').first());
+const sections = landing.value?.sections.map(section => ({
+	...section,
+	component: loaderComponent(section.component),
+}));
 </script>
 
 <template>
 	<div class="w-full">
 		<UPageHero
-			headline="New release"
-			title="Your Creative Agentic Partner"
-			description="100x your marketing with an AI creative team. The worlds first AI designer, marketer, and ad creator in one."
+			:id="landing?.hero?.id"
+			:headline="landing?.hero?.headline"
+			:title="landing?.hero?.title"
+			:description="landing?.hero?.description"
 			orientation="vertical"
 			:links="links"
 		>
 			<img
-				src="/mock-dark.avif"
+				:src="landing?.hero?.image"
 				alt="App screenshot"
-				class="rounded-lg shadow-2xl ring ring-default"
 				loading="lazy"
+				class="rounded-lg shadow-2xl ring ring-default"
 			>
 		</UPageHero>
 		<UPageSection
-			id="services"
-			title="What can we create together?"
-			headline="Examples"
-			:ui="{ root: 'relative', container: 'max-w-(100vw)' }"
-		>
-			<LazySliderCard
-				class="w-full"
-				hydrate-on-visible
-			/>
-		</UPageSection>
-		<UPageSection
-			title="No more platform hopping"
-			description="100x your marketing with an AI creative team. The worlds first AI designer, marketer, and ad creator in one."
-			headline="Comparison"
+			v-for="(section, index) in sections"
+			:id="section.id"
+			:key="index"
+			:title="section.title"
+			:description="section.description"
+			:headline="section.headline"
 			orientation="vertical"
+			:ui="section.ui"
 		>
-			<LazySideCards hydrate-on-visible />
-		</UPageSection>
-		<UPageSection
-			id="about"
-			title="Your Creative Partner"
-			description="100x your marketing with an AI creative team. The worlds first AI designer, marketer, and ad creator in one."
-			headline="Agentic Creativity"
-			orientation="vertical"
-			:ui="{ root: 'relative', container: 'max-w-(100vw)' }"
-		>
-			<LazySliderControls hydrate-on-visible />
-		</UPageSection>
-		<UPageSection
-			id="features"
-			title="Explore more"
-			description="Discover our ever-growing collection of tools and opportunities for content creators."
-			headline="Features"
-			orientation="vertical"
-		>
-			<LazyFeatureSection hydrate-on-visible />
-		</UPageSection>
-		<UPageSection
-			title="For all teams"
-			description="Accessible for all type of the content creators and businesses."
-			headline="Pricing"
-			orientation="vertical"
-		>
-			<LazyPriceSection hydrate-on-visible />
-		</UPageSection>
-		<UPageSection
-			id="faqs"
-			title="Frequently asked questions"
-			description="Get your questions answered."
-			headline="FAQs"
-			orientation="vertical"
-		>
-			<LazyFaqAccordion
-				class="max-w-3xl mx-auto px-4"
+			<component
+				:is="section.component"
 				hydrate-on-visible
 			/>
 		</UPageSection>

@@ -2,7 +2,7 @@
 import { defineNuxtConfig } from 'nuxt/config';
 
 export default defineNuxtConfig({
-	modules: ['@nuxt/ui', '@nuxt/eslint'],
+	modules: ['@nuxt/content', '@nuxt/ui', '@nuxt/eslint'],
 	components: [
 		{
 			path: '~/components',
