@@ -16,7 +16,7 @@ sections:
     component: "SliderCard"
     ui:
       root: "relative"
-      container: "max-w-(100vw)"
+      container: "max-w-[100vw]"
 
   - id: "comparison"
     title: "No more platform hopping"
