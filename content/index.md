@@ -6,6 +6,16 @@ hero:
   description: "100x your marketing with an AI creative team. The worlds first AI designer, marketer, and ad creator in one."
   orientation: "vertical"
   image: "/mock-dark.avif"
+  links: 
+  - label: "Get started"
+    to: "/"
+    icon: "i-lucide-square-play"
+
+  - label: "Learn More"
+    to: "/"
+    trailingIcon: "i-lucide-arrow-right"
+    color: "neutral"
+    variant: "subtle"
 
 sections:
   - id: "services"
@@ -14,6 +24,7 @@ sections:
     description: ""
     orientation: "horizontal"
     component: "SliderCard"
+    style: "w-full"
     ui:
       root: "relative"
       container: "max-w-[100vw]"
@@ -33,7 +44,7 @@ sections:
     component: "SliderControls"
     ui:
       root: "relative"
-      container: "max-w-(100vw)"
+      container: "max-w-[100vw]"
 
   - id: "features"
     title: "Explore more"

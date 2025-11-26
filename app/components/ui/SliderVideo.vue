@@ -44,6 +44,7 @@ const slides = [
 ];
 
 const props = defineProps<{
+	class?: string;
 	activeSlide: string | number;
 }>();
 

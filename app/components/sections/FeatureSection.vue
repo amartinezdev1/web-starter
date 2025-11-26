@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import MediaCard from '../ui/MediaCard.vue';
-
 const features = [
 	{
 		title: 'Animation',
@@ -33,16 +31,26 @@ const features = [
 		media: 'https://picsum.photos/840/1120?random=14',
 	},
 ];
+
+const props = defineProps<{
+	class?: string;
+}>();
 </script>
 
 <template>
-	<div class="grid md:grid-cols-2 gap-x-6 gap-y-10 md:gap-y-20 w-full">
+	<div
+		class="grid md:grid-cols-2 gap-x-6 gap-y-10 md:gap-y-20 w-full"
+		:class="props.class"
+	>
 		<div
 			v-for="(feature, index) in features"
 			:key="index"
 			class="flex flex-col gap-6"
 		>
-			<MediaCard :card="feature" />
+			<LazyMediaCard
+				:card="feature"
+				hydrate-on-visible
+			/>
 		</div>
 	</div>
 </template>

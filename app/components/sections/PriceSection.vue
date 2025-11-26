@@ -1,8 +1,14 @@
 <script setup lang="ts">
+const props = defineProps<{
+	class?: string;
+}>();
 </script>
 
 <template>
-	<div class="grid xl:grid-cols-2 gap-6 w-full">
+	<div
+		class="grid xl:grid-cols-2 gap-6 w-full"
+		:class="props.class"
+	>
 		<div class="bg-[#171717] p-8 md:p-14 rounded-4xl flex flex-col gap-10 items-start">
 			<UBadge
 				size="lg"

@@ -12,6 +12,17 @@ export default defineContentConfig({
 					title: z.string(),
 					description: z.string(),
 					image: z.string().optional(),
+					links: z.array(
+						z.object({
+							label: z.string(),
+							to: z.string(),
+							icon: z.string().optional(),
+							trailingIcon: z.string().optional(),
+							color: z.string().optional(),
+							variant: z.string().optional(),
+							size: z.string().optional(),
+						}),
+					),
 				}),
 				sections: z.array(
 					z.object({
@@ -21,6 +32,7 @@ export default defineContentConfig({
 						description: z.string(),
 						orientation: z.string(),
 						component: z.string(),
+						style: z.string().optional(),
 						ui: z.object({
 							root: z.string().optional(),
 							container: z.string().optional(),

@@ -21,10 +21,17 @@ const slideIndex: Ref<string | number> = ref(0);
 const slideTo = (index: number) => {
 	slideIndex.value = index;
 };
+
+const props = defineProps<{
+	class?: string;
+}>();
 </script>
 
 <template>
-	<div class="gap-4 hidden md:flex flex-wrap justify-center">
+	<div
+		class="gap-4 hidden md:flex flex-wrap justify-center"
+		:class="props.class"
+	>
 		<UButton
 			v-for="(item, index) in items"
 			:key="item.label"
@@ -38,5 +45,8 @@ const slideTo = (index: number) => {
 			{{ item.label }}
 		</UButton>
 	</div>
-	<SliderVideo :active-slide="slideIndex" />
+	<LazySliderVideo
+		:active-slide="slideIndex"
+		hydrate-on-visible
+	/>
 </template>

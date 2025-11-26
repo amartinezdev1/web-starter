@@ -5,6 +5,7 @@ const props = defineProps({
 			title: string;
 			description: string;
 			media: string;
+			class?: string;
 		},
 		required: true,
 	},

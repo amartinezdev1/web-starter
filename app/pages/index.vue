@@ -1,19 +1,4 @@
 <script setup lang="ts">
-const links = ref([
-	{
-		label: 'Get started',
-		to: '/',
-		icon: 'i-lucide-square-play',
-	},
-	{
-		label: 'Learn more',
-		to: '/',
-		color: 'neutral' as const,
-		variant: 'subtle' as const,
-		trailingIcon: 'i-lucide-arrow-right',
-	},
-]);
-
 const { data: landing } = await useAsyncData('index', () => queryCollection('landing').first());
 const sections = landing.value?.sections.map(section => ({
 	...section,
@@ -28,8 +13,8 @@ const sections = landing.value?.sections.map(section => ({
 			:headline="landing?.hero?.headline"
 			:title="landing?.hero?.title"
 			:description="landing?.hero?.description"
+			:links="landing?.hero?.links as any"
 			orientation="vertical"
-			:links="links"
 		>
 			<img
 				:src="landing?.hero?.image"
@@ -51,7 +36,6 @@ const sections = landing.value?.sections.map(section => ({
 			<component
 				:is="section.component"
 				class="w-full"
-				hydrate-on-visible
 			/>
 		</UPageSection>
 	</div>

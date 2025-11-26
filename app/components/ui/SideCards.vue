@@ -11,10 +11,17 @@ const cards = [
 		media: '/after-dark.avif',
 	},
 ];
+
+const props = defineProps<{
+	class?: string;
+}>();
 </script>
 
 <template>
-	<div class="flex gap-6 w-full flex-col lg:flex-row">
+	<div
+		class="flex gap-6 w-full flex-col lg:flex-row"
+		:class="props.class"
+	>
 		<div
 			v-for="(card, index) in cards"
 			:key="index"

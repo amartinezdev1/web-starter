@@ -68,6 +68,10 @@ const cards = [
 		media: 'https://picsum.photos/840/1120?random=8',
 	},
 ];
+
+const props = defineProps<{
+	class?: string;
+}>();
 </script>
 
 <template>
@@ -79,12 +83,16 @@ const cards = [
 		:modules="modules"
 		:breakpoints="breakpoints"
 		:slide-to-clicked-slide="true"
+		:class="props.class"
 	>
 		<swiper-slide
 			v-for="(card, index) in cards"
 			:key="index"
 		>
-			<MediaCard :card="card" />
+			<LazyMediaCard
+				:card="card"
+				hydrate-on-visible
+			/>
 		</swiper-slide>
 	</swiper>
 </template>

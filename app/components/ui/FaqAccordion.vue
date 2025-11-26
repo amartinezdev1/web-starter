@@ -13,6 +13,9 @@ const items = ref([
 		content: 'Yes! Nuxt UI is used in production by thousands of applications with extensive tests, regular updates, and active maintenance.',
 	},
 ]);
+const props = defineProps<{
+	class?: string;
+}>();
 </script>
 
 <template>
@@ -20,5 +23,6 @@ const items = ref([
 		:items="items"
 		:ui="{ body: 'text-white/50 text-base md:text-xl font-medium leading-relaxed', label: 'text-xl md:text-2xl font-medium hover:underline', item: 'border-b border-white/20 last:border-b-0' }"
 		trailing-icon="material-symbols:add"
+		:class="props.class"
 	/>
 </template>
