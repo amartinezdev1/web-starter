@@ -50,6 +50,7 @@ const sections = landing.value?.sections.map(section => ({
 		>
 			<component
 				:is="section.component"
+				class="w-full"
 				hydrate-on-visible
 			/>
 		</UPageSection>
