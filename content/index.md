@@ -2,8 +2,8 @@
 hero:
   id: "main"
   headline: "Evolución Digital"
-  title: "Desarrollo Web que Vende Mientras Duermes"
-  description: "Elevamos la eficiencia de tu negocio con plataformas digitales robustas. Integramos optimización SEO avanzada y tecnología inteligente para garantizar un crecimiento orgánico sostenible y medible."
+  title: "Desarrollo Web que vende mientras duermes"
+  description: "Diseñamos e implementamos soluciones digitales completas: desde sitios corporativos de alta conversión hasta plataformas de comercio electrónico y aplicaciones web complejas."
   orientation: "vertical"
   image: "/mock-dark.avif"
   links: 
@@ -39,7 +39,7 @@ sections:
   - id: "about"
     title: "Tu Partner Tecnológico Estratégico"
     headline: "Ingeniería + Marketing"
-    description: "No somos solo programadores. Somos un equipo híbrido de desarrolladores full-stack y estrategas digitales obsesionados con el ROI de tu sitio web."
+    description: "Combinamos la precisión de la ingeniería de software con la visión del marketing digital. Nuestro objetivo es el rendimiento medible y el máximo retorno de tu inversión web."
     orientation: "vertical"
     component: "SliderControls"
     ui:
@@ -49,14 +49,14 @@ sections:
   - id: "features"
     title: "Tecnología preparada para el futuro"
     headline: "Stack Tecnológico"
-    description: "Explora las herramientas y características que integran nuestros desarrollos para asegurar que tu web no quede obsoleta en 6 meses."
+    description: "Explora los estándares de calidad y la tecnología que empleamos para asegurar que tu plataforma sea segura, escalable y esté lista para el crecimiento."
     orientation: "vertical"
     component: "FeatureSection"
 
   - id: "price"
-    title: "Inversión transparente y escalable"
-    headline: "Planes de Desarrollo"
-    description: "Soluciones accesibles para startups y arquitecturas robustas para empresas consolidadas. Sin costos ocultos."
+    title: "Inversión clara, resultados garantizados"
+    headline: "Planes de Proyecto"
+    description: "Soluciones accesibles diseñadas para adaptarse al tamaño y la ambición de tu empresa. Invierte en calidad y recibe valor a largo plazo."
     orientation: "vertical"
     component: "PriceSection"
 
