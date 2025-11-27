@@ -14,8 +14,6 @@ hero:
   - label: "Ver Portafolio"
     to: "/"
     trailingIcon: "i-lucide-arrow-right"
-    color: "neutral"
-    variant: "subtle"
 
 sections:
   - id: "services"

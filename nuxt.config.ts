@@ -15,6 +15,9 @@ export default defineNuxtConfig({
 	],
 	devtools: { enabled: true },
 	css: ['@/assets/css/main.css'],
+	ui: {
+		colorMode: false,
+	},
 	compatibilityDate: '2025-07-15',
 	vite: {
 		css: {

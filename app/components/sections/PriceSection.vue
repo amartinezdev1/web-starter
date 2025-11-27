@@ -50,8 +50,6 @@ const props = defineProps<{
 				</p>
 			</div>
 			<UButton
-				color="neutral"
-				variant="solid"
 				size="xl"
 				class="font-medium text-base md:text-lg h-12 px-4 cursor-pointer rounded-md"
 			>

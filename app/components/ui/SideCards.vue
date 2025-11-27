@@ -43,7 +43,6 @@ const props = defineProps<{
 					height="1040"
 					decoding="async"
 					data-nimg="1"
-					class="dark:block hidden"
 					:src="card.media"
 					style="color: transparent;"
 				>
