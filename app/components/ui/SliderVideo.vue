@@ -52,6 +52,7 @@ const breakpoints = {
 				loop
 				preload="metadata"
 				class="w-full h-full object-cover aspect-video rounded-lg md:rounded-4xl transition-transform duration-200 hover:scale-[1.01]"
+				:alt="slide.title"
 			/>
 		</swiper-slide>
 	</swiper>

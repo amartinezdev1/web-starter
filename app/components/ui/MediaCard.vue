@@ -19,7 +19,7 @@ const props = defineProps({
 				:is="props.card.media?.endsWith('.mp4') ? 'video' : 'img'"
 				:src="props.card.media"
 				v-bind="props.card.media?.endsWith('.mp4') ? { loop: true, playsinline: true, preload: 'none' } : {}"
-				alt="Content Service Media"
+				:alt="props.card.title"
 				loading="lazy"
 				class="bg-[#171717] size-full object-cover rounded-4xl"
 			/>

@@ -34,6 +34,7 @@ const items: NavigationMenuItem[] = [
 		<UNavigationMenu
 			:items="items"
 			variant="link"
+			:ui="{ list: 'flex flex-col sm:flex-row' }"
 		/>
 
 		<template #right>

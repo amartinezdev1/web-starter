@@ -18,7 +18,7 @@ const sections = landing.value?.sections.map(section => ({
 		>
 			<img
 				:src="landing?.hero?.image"
-				alt="App screenshot"
+				alt="Hero main image for the landing page"
 				loading="lazy"
 				class="rounded-lg shadow-2xl ring ring-default"
 			>

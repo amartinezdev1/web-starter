@@ -27,7 +27,7 @@ const props = defineProps<{
 			</div>
 			<div class="aspect-square flex items-center justify-center px-6 md:px-4 md:scale-90">
 				<img
-					alt="Centralized workflow diagram with six creative steps arranged around a hub: Create brief, Generate image, Edit image, Generate video, Animate, and Upscale."
+					:alt="card.description"
 					loading="lazy"
 					width="1040"
 					height="1040"

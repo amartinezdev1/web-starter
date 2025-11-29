@@ -27,7 +27,7 @@ const props = defineProps<{
 				<UButton
 					color="neutral"
 					variant="outline"
-					class="bg-white/10 hover:bg-white/15 hover:text-white font-medium text-md h-12 px-4 cursor-pointer rounded-md transition-all duration-200 ring-0"
+					class="bg-white/10 hover:bg-white/15 hover:text-white active:text-black font-medium text-md h-12 px-4 cursor-pointer rounded-md transition-all duration-200 ring-0"
 				>
 					Iniciar mi posicionamiento
 				</UButton>
@@ -73,7 +73,7 @@ const props = defineProps<{
 					color="neutral"
 					variant="outline"
 					size="md"
-					class="bg-white/10 hover:bg-white/15 hover:text-white font-medium text-md h-12 px-4 cursor-pointer rounded-md transition-all duration-200 ring-0"
+					class="bg-white/10 hover:bg-white/15 hover:text-white active:text-black font-medium text-md h-12 px-4 cursor-pointer rounded-md transition-all duration-200 ring-0"
 				>
 					Crear mi solución a medida
 				</UButton>
@@ -86,6 +86,7 @@ const props = defineProps<{
 						class="w-full h-full object-cover"
 						src="/education-research.avif"
 						style="color: transparent;"
+						alt="Plan Enterprise Multiplatform"
 					>
 				</div>
 			</div>
