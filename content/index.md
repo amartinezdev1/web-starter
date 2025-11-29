@@ -11,10 +11,6 @@ hero:
     to: "/"
     icon: "i-lucide-rocket"
 
-  - label: "Ver Portafolio"
-    to: "/"
-    trailingIcon: "i-lucide-arrow-right"
-
 sections:
   - id: "services"
     title: "¿Cómo escalamos tu negocio?"
@@ -27,7 +23,7 @@ sections:
       root: "relative"
       container: "max-w-[100vw]"
 
-  - id: "comparison"
+  - id: "strategy"
     title: "Deja de perder clientes por una web lenta"
     headline: "La Diferencia Técnica"
     description: "El 53% de los usuarios abandona un sitio si tarda más de 3 segundos en cargar. Nosotros garantizamos rendimiento, seguridad y posicionamiento SEO desde la primera línea de código."
@@ -44,7 +40,7 @@ sections:
       root: "relative"
       container: "max-w-[100vw]"
 
-  - id: "features"
+  - id: "solutions"
     title: "Tecnología preparada para el futuro"
     headline: "Stack Tecnológico"
     description: "Explora los estándares de calidad y la tecnología que empleamos para asegurar que tu plataforma sea segura, escalable y esté lista para el crecimiento."

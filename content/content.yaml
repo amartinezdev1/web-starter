@@ -1,0 +1,77 @@
+sections:
+  - id: "faqs"
+    items:
+      - label: "¿Qué diferencia hay entre sus desarrollos y una plantilla comercial?"
+        content: "La diferencia es el rendimiento y la escalabilidad. Las plantillas suelen tener código 'sucio' que ralentiza tu web y limita tu crecimiento. Nosotros desarrollamos arquitecturas a medida optimizadas para cargar en milisegundos, posicionar mejor en Google y convertir visitas en clientes."
+
+      - label: "¿Incluyen el posicionamiento en Google (SEO) en el desarrollo?"
+        content: "Absolutamente. No creemos en sitios web invisibles. Todos nuestros desarrollos incluyen una base de SEO Técnico Avanzado: optimización de Core Web Vitals, estructura semántica perfecta, sitemaps y configuración de indexado para que los buscadores entiendan tu sitio desde el día uno."
+
+      - label: "Escucho mucho sobre IA y Automatización, ¿cómo beneficia esto a mi negocio?"
+        content: "La IA no es el futuro, es el presente. Implementamos Chatbots Inteligentes que atienden clientes 24/7 y Flujos de Automatización (p.ej. Zapier) que conectan tu web con tu CRM o Email. Esto reduce tus costos operativos y libera a tu equipo de tareas repetitivas para que se enfoquen en vender."
+
+      - label: "¿Debería invertir en una App Móvil o en una PWA (Progressive Web App)?"
+        content: "Depende de tu objetivo, pero generalmente recomendamos empezar con una PWA. Estas ofrecen una experiencia idéntica a una App nativa (iconos en pantalla, notificaciones, modo offline) pero son más rápidas de desarrollar, no requieren descarga desde las tiendas y funcionan en todos los dispositivos. Te ahorran tiempo y presupuesto."
+
+      - label: "¿Cuánto tiempo toma desarrollar un proyecto completo?"
+        content: "Priorizamos la agilidad sin sacrificar la excelencia. Una Landing Page de alta conversión toma aprox. 2 semanas. Un E-commerce completo o una Web App compleja puede tomar entre 6 y 10 semanas, dependiendo de las funcionalidades específicas que necesites."
+  
+  - id: "servicios"
+    items:
+      - title: "Desarrollo Web de Alto Rendimiento"
+        description: "Más que sitios web, construimos activos digitales diseñados para la velocidad y la conversión."
+        media: "https://picsum.photos/840/1120?random=9"
+
+      - title: "Desarrollo Móvil Multiplataforma"
+        description: "Creamos aplicaciones híbridas y nativas que conectan con tu audiencia en su dispositivo más personal."
+        media: "https://picsum.photos/840/1120?random=10"
+
+      - title: "Sistemas de Reservas Inteligentes"
+        description: "Monetiza tu tiempo automáticamente. Implementamos motores de reservas que gestionan tu agenda 24/7."
+        media: "https://picsum.photos/840/1120?random=11"
+
+      - title: "SEO Técnico & Core Web Vitals"
+        description: "Optimizamos la estructura semántica y la velocidad de carga para cumplir con los estándares más exigentes de los motores de búsqueda."
+        media: "https://picsum.photos/840/1120?random=12"
+
+      - title: "Analítica de Datos & Tracking Avanzado"
+        description: "Configuramos ecosistemas de medición precisos para que entiendas el comportamiento exacto de tus usuarios y el retorno de tu inversión."
+        media: "https://picsum.photos/840/1120?random=13"
+
+      - title: "Ingeniería Backend & APIs"
+        description: "Construimos arquitecturas de servidor que permiten que tus sistemas hablen entre sí sin interrupciones."
+        media: "https://picsum.photos/840/1120?random=14"
+  
+  - id: "soluciones"
+    items: 
+      - title: "Posicionamiento SEO & Visibilidad"
+        description: "Tu mejor vendedor 24/7. Garantizamos la máxima visibilidad mediante la optimización técnica y semántica para dominar las búsquedas orgánicas relevantes."
+        media: "https://picsum.photos/840/1120?random=1"
+
+      - title: "Google Analytics & Tag Manager Avanzado"
+        description: "Decisiones basadas en datos. Configuración precisa de GA4 y GTM para mapear el comportamiento del usuario y medir el ROI real de cada conversión."
+        media: "https://picsum.photos/840/1120?random=2"
+
+      - title: "Google Ads (SEM) Efectivo"
+        description: "Configuración de campañas rentables y optimización del tracking para asegurar que cada inversión publicitaria tenga el máximo impacto."
+        media: "https://picsum.photos/840/1120?random=3"
+
+      - title: "Desarrollo Full Stack a Medida"
+        description: "Construcción robusta de frontend y backend usando lenguajes de programación modernos para dar vida a cualquier idea sin límites técnicos."
+        media: "https://picsum.photos/840/1120?random=4"
+
+      - title: "Progressive Web Apps (PWA)"
+        description: "Experiencia móvil de vanguardia. Sitios web que se instalan, ofrecen notificaciones push y rinden de manera superior en cualquier dispositivo."
+        media: "https://picsum.photos/840/1120?random=5"
+
+      - title: "Single Page Applications (SPA)"
+        description: "Experiencias fluidas y dinámicas (ej. Dashboards) con velocidad sin recargas, ideales para herramientas internas de alto rendimiento."
+        media: "https://picsum.photos/840/1120?random=6"
+
+      - title: "Prototipado Figma (UX/UI)"
+        description: "Validamos flujos de usuario con prototipos interactivos, asegurando que el diseño sea intuitivo y guíe al usuario hacia la conversión."
+        media: "https://picsum.photos/840/1120?random=7"
+
+      - title: "Automatización & n8n"
+        description: "Implementación de n8n para conectar tus servicios, eliminar tareas repetitivas y crear flujos de trabajo autónomos que ahorran tiempo y costos."
+        media: "https://picsum.photos/840/1120?random=8"

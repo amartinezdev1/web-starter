@@ -18,5 +18,17 @@ export default defineAppConfig({
 				description: 'max-w-full md:max-w-4xl mx-auto text-white text-base text-center md:text-xl font-medium leading-relaxed',
 			},
 		},
+		navigationMenu: {
+			slots: {
+				link: 'text-base',
+			},
+		},
+		button: {
+			slots: {
+				base: [
+					'hover:text-black',
+				],
+			},
+		},
 	},
 });

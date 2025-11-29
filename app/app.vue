@@ -1,7 +1,9 @@
 <template>
 	<NuxtLayout>
-		<NuxtPage />
-		<BgStars />
+		<main>
+			<NuxtPage />
+			<BgStars />
+		</main>
 	</NuxtLayout>
 </template>
 

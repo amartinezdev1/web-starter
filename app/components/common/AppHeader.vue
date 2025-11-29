@@ -5,18 +5,18 @@ import type { NavigationMenuItem } from '@nuxt/ui';
 const route = useRoute();
 const items = computed<NavigationMenuItem[]>(() => [
 	{
-		label: 'Services',
+		label: 'Servicios',
 		to: '/#services',
 		active: route.path.startsWith('/'),
 	},
 	{
-		label: 'About',
+		label: 'Nosotros',
 		to: '/#about',
 		active: route.path.startsWith('/'),
 	},
 	{
-		label: 'Features',
-		to: '/#features',
+		label: 'Soluciones',
+		to: '/#solutions',
 		class: 'text-white',
 	},
 	{
@@ -29,6 +29,7 @@ const items = computed<NavigationMenuItem[]>(() => [
 
 <template>
 	<UHeader
+		id="header"
 		title="Bit Flow"
 		class="min-w-screen fixed border-0 bg-default/0"
 		to="/"
@@ -41,12 +42,12 @@ const items = computed<NavigationMenuItem[]>(() => [
 
 		<template #right>
 			<UButton
+				icon="i-simple-icons-instagram"
 				color="neutral"
 				variant="ghost"
-				to="https://github.com/nuxt/ui"
+				to="https://www.instagram.com/bitflow.pa/"
 				target="_blank"
-				icon="i-simple-icons-github"
-				aria-label="GitHub"
+				aria-label="Instagram"
 			/>
 		</template>
 

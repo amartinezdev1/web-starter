@@ -2,9 +2,9 @@
 const props = defineProps({
 	card: {
 		type: Object as () => {
-			title: string;
-			description: string;
-			media: string;
+			title?: string;
+			description?: string;
+			media?: string;
 			class?: string;
 		},
 		required: true,
@@ -16,9 +16,9 @@ const props = defineProps({
 	<div class=" flex flex-col gap-6 px-4 md:px-0.5">
 		<div class="cursor-pointer transition-transform duration-200 ease-out hover:scale-[1.01]">
 			<component
-				:is="props.card.media.endsWith('.mp4') ? 'video' : 'img'"
+				:is="props.card.media?.endsWith('.mp4') ? 'video' : 'img'"
 				:src="props.card.media"
-				v-bind="props.card.media.endsWith('.mp4') ? { loop: true, playsinline: true, preload: 'none' } : {}"
+				v-bind="props.card.media?.endsWith('.mp4') ? { loop: true, playsinline: true, preload: 'none' } : {}"
 				alt="Content Service Media"
 				loading="lazy"
 				class="bg-[#171717] size-full object-cover rounded-4xl"

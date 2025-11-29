@@ -9,13 +9,14 @@
 }
 
 :root {
-  --ui-container: 1400px;
-  --ui-card-bg: #171717;
-  --ui-primary: #ffffff;
+  --ui-bg: #000000;
   --ui-text: #ffffff;
-  --ui-text-highlighted: #ffffff;
   --ui-border: #000000;
+  --ui-container: 1400px;
+  --ui-primary: #ffffff;
+  --ui-card-bg: #171717;
   --ui-text-inverted: #000000;
+  --ui-text-highlighted: #ffffff;
   font-family: var(--font-sans);
 }
 

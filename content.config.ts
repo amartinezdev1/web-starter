@@ -41,5 +41,25 @@ export default defineContentConfig({
 				),
 			}),
 		}),
+		content: defineCollection({
+			type: 'data',
+			source: '**/content.yaml',
+			schema: z.object({
+				sections: z.array(
+					z.object({
+						id: z.string(),
+						items: z.array(
+							z.object({
+								label: z.string().optional(),
+								content: z.string().optional(),
+								title: z.string().optional(),
+								description: z.string().optional(),
+								media: z.string().optional(),
+							}),
+						),
+					}),
+				),
+			}),
+		}),
 	},
 });

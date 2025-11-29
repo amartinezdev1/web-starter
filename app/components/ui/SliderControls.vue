@@ -14,7 +14,7 @@ const items = ref([
 	},
 ]);
 
-const buttonClass = 'bg-black hover:bg-accented/20 text-white text-base md:text-md font-medium h-12 px-4 cursor-pointer rounded-md transition-all duration-200';
+const buttonClass = 'bg-black hover:bg-accented/20 text-white hover:text-text-white text-base md:text-md font-medium h-12 px-4 cursor-pointer rounded-md transition-all duration-200';
 
 const slideIndex: Ref<string | number> = ref(0);
 
