@@ -9,14 +9,15 @@
 }
 
 :root {
-  --ui-bg: #000000;
-  --ui-text: #ffffff;
-  --ui-border: #000000;
+  --ui-bg: #000;
+  --ui-text: #fff;
+  --ui-border: #000;
   --ui-container: 1400px;
-  --ui-primary: #ffffff;
+  --ui-primary: #fff;
   --ui-card-bg: #171717;
-  --ui-text-inverted: #000000;
-  --ui-text-highlighted: #ffffff;
+  --ui-text-inverted: #000;
+  --ui-text-highlighted: #fff;
+  --swiper-theme-color: #fff;
   font-family: var(--font-sans);
 }
 
@@ -26,4 +27,9 @@ html {
 
 body {
   background-color: rgb(10, 10, 10);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: white !important;
 }

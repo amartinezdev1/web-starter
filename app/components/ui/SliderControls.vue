@@ -1,30 +1,20 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
 import type { Ref } from 'vue';
-
-const items = ref([
-	{
-		label: 'Works with all channels',
-	},
-	{
-		label: 'Multi-platform ready',
-	},
-	{
-		label: 'Cares about quality and guidelines',
-	},
-]);
-
-const buttonClass = 'bg-black hover:bg-accented/20 text-white hover:text-text-white text-base md:text-md font-medium h-12 px-4 cursor-pointer rounded-md transition-all duration-200';
-
-const slideIndex: Ref<string | number> = ref(0);
-
-const slideTo = (index: number) => {
-	slideIndex.value = index;
-};
 
 const props = defineProps<{
 	class?: string;
 }>();
+
+const section = useContentSection('controles');
+const items = computed(() => section.value?.items ?? []);
+
+const buttonClass = 'bg-black hover:bg-accented/20 text-white hover:text-text-white text-base md:text-md font-medium h-12 px-4 cursor-pointer rounded-md transition-all duration-200';
+
+const slideIndex: Ref<string | number> = ref(0);
+const slideTo = (index: number) => {
+	slideIndex.value = index;
+};
 </script>
 
 <template>

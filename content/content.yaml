@@ -75,3 +75,29 @@ sections:
       - title: "Automatización & n8n"
         description: "Implementación de n8n para conectar tus servicios, eliminar tareas repetitivas y crear flujos de trabajo autónomos que ahorran tiempo y costos."
         media: "https://picsum.photos/840/1120?random=8"
+
+  - id: "enfoque"
+    items: 
+      - media: "https://videos.pexels.com/video-files/5473806/5473806-uhd_2732_1440_25fps.mp4"
+
+      - media: "https://videos.pexels.com/video-files/33237483/14161812_2560_1440_25fps.mp4"
+
+      - media: "https://videos.pexels.com/video-files/7947406/7947406-hd_1920_1080_30fps.mp4"
+  
+  - id: "controles"
+    items: 
+      - label: "Ingeniería + Desarrollo"
+
+      - label: "Marketing + Datos"
+
+      - label: "Alianza + Resultados"
+
+  - id: "comparasion"
+    items: 
+      - title: "Lo Tradicional"
+        description: "Depender de plantillas genéricas y un exceso de plugins genera una deuda técnica silenciosa que devora tu presupuesto. Enfrentas costos ocultos por licencias constantes, vulnerabilidades de seguridad y herramientas que ralentiza tu operación."
+        media: "/before-dark.avif"
+
+      - title: "Tu Solución"
+        description: "Centralizamos tu presencia digital bajo un control absoluto. Implementamos arquitecturas modernas y herramientas de gestión en un flujo de trabajo compatible, seguro y diseñado para escalar orgánicamente sin las limitaciones de sistemas antiguos."
+        media: "/after-dark.avif"

@@ -1,16 +1,6 @@
 <script setup lang="ts">
-const cards = [
-	{
-		title: 'Before',
-		description: 'Juggling platforms, scattered content, and messy workflows. Too many tools, too little time.',
-		media: '/before-dark.avif',
-	},
-	{
-		title: 'After',
-		description: 'All your workflows, united in one hub—seamless, simple, and fully compatible with your favorite models and tools, including Figma.',
-		media: '/after-dark.avif',
-	},
-];
+const section = useContentSection('comparasion');
+const cards = section.value?.items;
 
 const props = defineProps<{
 	class?: string;

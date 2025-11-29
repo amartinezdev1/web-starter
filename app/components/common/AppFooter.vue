@@ -3,18 +3,18 @@ import type { NavigationMenuItem } from '@nuxt/ui';
 
 const items: NavigationMenuItem[] = [
 	{
-		label: 'Figma Kit',
-		to: 'https://go.nuxt.com/figma-ui',
+		label: 'Política de Privacidad',
+		to: '/',
 		class: 'text-white',
 	},
 	{
-		label: 'Playground',
-		to: 'https://stackblitz.com/edit/nuxt-ui',
+		label: 'Términos de Servicio',
+		to: '/',
 		class: 'text-white',
 	},
 	{
-		label: 'Releases',
-		to: 'https://github.com/nuxt/ui/releases',
+		label: 'Política de Cookies',
+		to: '/',
 		class: 'text-white',
 	},
 ];

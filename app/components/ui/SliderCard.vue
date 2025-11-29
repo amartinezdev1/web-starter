@@ -1,12 +1,13 @@
 <script setup lang="ts">
 import { Swiper, SwiperSlide } from 'swiper/vue';
-import { EffectCoverflow, Pagination } from 'swiper/modules';
+import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 
 import 'swiper/css';
-import 'swiper/css/effect-coverflow';
+import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import 'swiper/css/effect-coverflow';
 
-const modules = [EffectCoverflow, Pagination];
+const modules = [EffectCoverflow, Pagination, Navigation];
 const breakpoints = {
 	375: {
 		slidesPerView: 1,
@@ -45,6 +46,7 @@ const cards = section.value?.items;
 			:breakpoints="breakpoints"
 			:slide-to-clicked-slide="true"
 			:class="props.class"
+			:navigation="true"
 		>
 			<swiper-slide
 				v-for="(card, index) in cards"
