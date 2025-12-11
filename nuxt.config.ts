@@ -12,6 +12,9 @@ export default defineNuxtConfig({
 	devtools: { enabled: false },
 	css: ['@/assets/css/main.css'],
 	compatibilityDate: '2025-07-15',
+	nitro: {
+		preset: 'static',
+	},
 	vite: {
 		css: {
 			preprocessorOptions: {
