@@ -5,7 +5,7 @@ hero:
   title: "Desarrollo Web que vende mientras duermes"
   description: "Diseñamos e implementamos soluciones digitales completas: desde sitios corporativos de alta conversión hasta plataformas de comercio electrónico y aplicaciones web complejas."
   orientation: "vertical"
-  image: "/mock-dark.avif"
+  image: "/images/mock-dark.avif"
   links: 
   - label: "Cotizar mi Proyecto"
     to: "/"

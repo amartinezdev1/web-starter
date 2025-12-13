@@ -84,7 +84,7 @@ const props = defineProps<{
 						height="348"
 						decoding="async"
 						class="w-full h-full object-cover"
-						src="/education-research.avif"
+						src="/images/education-research.avif"
 						style="color: transparent;"
 						alt="Plan Enterprise Multiplatform"
 					>

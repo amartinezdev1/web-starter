@@ -96,8 +96,8 @@ sections:
     items: 
       - title: "Lo Tradicional"
         description: "Depender de plantillas genéricas y un exceso de plugins genera una deuda técnica silenciosa que devora tu presupuesto. Enfrentas costos ocultos por licencias constantes, vulnerabilidades de seguridad y herramientas que ralentiza tu operación."
-        media: "/before-dark.avif"
+        media: "/images/before-dark.avif"
 
       - title: "Tu Solución"
         description: "Centralizamos tu presencia digital bajo un control absoluto. Implementamos arquitecturas modernas y herramientas de gestión en un flujo de trabajo compatible, seguro y diseñado para escalar orgánicamente sin las limitaciones de sistemas antiguos."
-        media: "/after-dark.avif"
+        media: "/images/after-dark.avif"
