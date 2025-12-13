@@ -14,6 +14,12 @@ export default defineNuxtConfig({
 		},
 	],
 	devtools: { enabled: true },
+	app: {
+		baseURL: '/bitflow/',
+		head: {
+			title: 'Bit Flow',
+		},
+	},
 	css: ['@/assets/css/main.css'],
 	ui: {
 		colorMode: false,
