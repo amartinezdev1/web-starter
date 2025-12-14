@@ -12,7 +12,7 @@ const items = section.value?.items;
 		<UAccordion
 			:items="items"
 			:ui="{ body: 'text-white/50 text-base md:text-xl font-medium leading-relaxed', label: 'text-xl md:text-2xl font-medium hover:underline', item: 'border-b border-white/20 last:border-b-0' }"
-			trailing-icon="material-symbols:add"
+			trailing-icon="i-lucide-plus"
 			:class="props.class"
 		/>
 	</ClientOnly>
