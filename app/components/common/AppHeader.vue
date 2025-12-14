@@ -45,7 +45,7 @@ const items = computed<NavigationMenuItem[]>(() => [
 				icon="i-simple-icons-instagram"
 				color="neutral"
 				variant="ghost"
-				to="https://www.instagram.com/bitflow.pa/"
+				to="https://www.instagram.com/amartinez.dev/"
 				target="_blank"
 				aria-label="Instagram"
 			/>
