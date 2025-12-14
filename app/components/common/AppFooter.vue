@@ -42,7 +42,7 @@ const items: NavigationMenuItem[] = [
 				icon="i-simple-icons-instagram"
 				color="neutral"
 				variant="ghost"
-				to="https://www.instagram.com/bitflow.pa/"
+				to="https://www.instagram.com/amartinez.dev/"
 				target="_blank"
 				aria-label="Instagram"
 			/>
@@ -50,7 +50,7 @@ const items: NavigationMenuItem[] = [
 				icon="i-simple-icons-whatsapp"
 				color="neutral"
 				variant="ghost"
-				to="https://wa.me/50764099706"
+				to="https://wa.me/50761176215"
 				target="_blank"
 				aria-label="WhatsApp"
 			/>
@@ -58,7 +58,7 @@ const items: NavigationMenuItem[] = [
 				icon="i-simple-icons-linkedin"
 				color="neutral"
 				variant="ghost"
-				to="https://www.linkedin.com/in/bitflowpa/"
+				to="https://www.linkedin.com/in/angel-efrain-martinez1/"
 				target="_blank"
 				aria-label="LinkedIn"
 			/>
