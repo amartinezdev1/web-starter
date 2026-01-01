@@ -30,7 +30,7 @@ const items = computed<NavigationMenuItem[]>(() => [
 <template>
 	<UHeader
 		id="header"
-		title="Bit Flow"
+		title="EveryBytes"
 		class="min-w-screen fixed border-0 bg-default/0"
 		to="/"
 	>
@@ -45,7 +45,7 @@ const items = computed<NavigationMenuItem[]>(() => [
 				icon="i-simple-icons-instagram"
 				color="neutral"
 				variant="ghost"
-				to="https://www.instagram.com/amartinez.dev/"
+				to="https://www.instagram.com/every.bytes/"
 				target="_blank"
 				aria-label="Instagram"
 			/>

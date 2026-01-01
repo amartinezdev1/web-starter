@@ -1,5 +1,5 @@
 export default defineAppConfig({
-	title: 'Bit Flow',
+	title: 'EveryBytes',
 	theme: {
 		dark: true,
 	},
